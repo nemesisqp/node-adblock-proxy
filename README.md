@@ -2,7 +2,9 @@
 NodeJS AdBlock Proxy
 ====================
 
-Using NodeJS and a hosts file to block ad networks and making the interwebz even moar awesome!
+NodeJS Proxy for blocking adverts on the interwebz (with support for Adblock Plus filter lists and /etc/hosts files).
+This project aims to make the interwebz even moar awesome!
+
 
 # Why using a NodeJS based AdBlock Proxy?
 
@@ -44,14 +46,16 @@ nodejs start.js 8080; # will start a proxy on (defaulted) port 8080
 
 - HTTP Proxy
 - Host config files support (aka **/etc/hosts**)
-- Incremental cache updates for changed files in **./host.d** or **./json.d**
+- Adblock Plus filter list support ("without element hiding")
+- Incremental cache updates for changed files in **./adblockplus.d**, **./host.d** or **./json.d**
 
 
 # Work-in-progress (aka still not working)
 
 - SOCKS5 Proxy
+- Asynchronous cache file database for faster restart
 - Support for JSON config files
-- Support for AdBlock Plus filter rulesets
+- Support for AdBlock Plus filter rulesets, based on their fucked up RegExp system
 
 
 # Usage
