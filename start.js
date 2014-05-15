@@ -39,11 +39,11 @@
 
 
 	var proxy = new _Proxy({
-		root: root,
-		port: port
+		root: root
 	});
 
-	proxy.start();
+	proxy.listen('http',   port);
+	proxy.listen('socks5', 1080);
 
 })();
 
