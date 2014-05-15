@@ -4,6 +4,25 @@ NodeJS AdBlock Proxy
 
 Using NodeJS and a hosts file to block ad networks and making the interwebz even moar awesome!
 
+# Why using a NodeJS based AdBlock Proxy?
+
+- It's blazing fast. Seriously, forget other Proxy implementations.
+- It's written in JavaScript !!!!111eleven.
+
+- With a few hours on Facebook, reddit, stackoverflow, it uses this amount of memory (whilst having over 20k blocked hosts and urls with n rulesets):
+
+![Screenshot #01](./docs/images/screenshot_01.png)
+
+
+- And yes, 15MB is way less than a couple GB memory usage of an AdBlock Plus Web Browser extension.
+- If you still don't believe it, get over it and use something else. I don't care.
+
+
+# License
+
+This project is released under the WTFPL.
+See the LICENSE.md for details.
+
 
 # Installation
 
@@ -21,10 +40,17 @@ cd /opt/adproxy; # change if you used a different folder
 nodejs start.js 8080; # will start a proxy on (defaulted) port 8080
 ```
 
-# Configuration
+# Features
 
-- If you want to use a different port for serving as a proxy, just change the port in the start command.
+- HTTP Proxy is implemented
+- Support for hosts files
 
+# Work-in-progress
+
+- SOCKS5 Proxy
+- Directory listeners for *hosts.d* and *json.d*
+- Support for JSON config files
+- Support for AdBlock Plus filter rulesets
 
 # Integration
 
