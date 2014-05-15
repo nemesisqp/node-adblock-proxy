@@ -53,7 +53,23 @@ nodejs start.js 8080; # will start a proxy on (defaulted) port 8080
 - Support for JSON config files
 - Support for AdBlock Plus filter rulesets
 
-# Integration
 
-TODO: Documentation about setup of Web Browsers. Contributions welcomed.
+# Usage
+
+## Ubuntu (Gnome Shell)
+
+- Start the Proxy (as shown in [Installation](#Installation))
+- Go to **System Settings** > **Network**
+- Click on **Network Proxy** on the left side
+- Select Method *Manual* and use 127.0.0.1 as IP and 8080 as port
+
+If you started the Proxy setting a different port, please change that accordingly.
+
+![Screenshot Gnome Shell](./docs/images/screenshot_gnome_shell.png)
+
+
+## TODO: Other Operating Systems
+
+Documentation about setup on other Operating Systems.
+**Contributions welcomed**.
 
