@@ -42,13 +42,14 @@ nodejs start.js 8080; # will start a proxy on (defaulted) port 8080
 
 # Features
 
-- HTTP Proxy is implemented
-- Support for hosts files
+- HTTP Proxy
+- Host config files support (aka **/etc/hosts**)
+- Incremental cache updates for changed files in **./host.d** or **./json.d**
 
-# Work-in-progress
+
+# Work-in-progress (aka still not working)
 
 - SOCKS5 Proxy
-- Directory listeners for *hosts.d* and *json.d*
 - Support for JSON config files
 - Support for AdBlock Plus filter rulesets
 
